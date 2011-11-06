@@ -5,6 +5,8 @@ My contribution to the script was to let you email the link to someone.
 
 You need ruby and gems installed to have this running.
 
+P.S.: This is my first attempt at modifying a Ruby script, and I am just a beginner. But, it does work :P
+
 ##Installation
 
 ### 1) Installing Requirements (for Ubuntu)
