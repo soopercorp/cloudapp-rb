@@ -57,7 +57,7 @@ I'm new to this, and I think I can add my own license to the modification/contri
 
     (The MIT License)
     
-    Copyright (c) 2011 Hardik Ruparel
+    Copyright (c) 2011 Hardik Ruparel , http://blog.hardikr.com
     
     Permission is hereby granted, free of charge, to any person obtaining
     a copy of this software and associated documentation files (the
