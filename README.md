@@ -78,7 +78,7 @@ I'm new to this, and I think I can add my own license to the modification/contri
     TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-This is a fork of a couple of scripts. From what I can tell, @holman's script (https://github.com/holman/dotfiles/blob/master/bin/cloudapp) is unlicensed.
+This is a fork of a couple of scripts. @holman's script (https://github.com/holman/dotfiles/blob/master/bin/cloudapp) is MIT Licensed.
 
 Its fork (by @aashay) has the following license. It can be found at https://github.com/aashay/Cloudapp#readme
 
