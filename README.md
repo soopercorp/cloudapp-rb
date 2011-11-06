@@ -1,6 +1,9 @@
 So this is my fork of @aashay's fork of @holman's Cloudapp Ruby Script.
 
-Basically, this let's you use cloudapp from the command-line in UNIX systems. You need ruby and gems installed to have this running.
+Basically, this let's you use cloudapp (http://getcloudapp.com) from the command-line in UNIX systems.
+My contribution to the script was to let you email the link to someone.
+
+You need ruby and gems installed to have this running.
 
 ##Installation
 
@@ -47,11 +50,8 @@ Huge thanks to:
 
 
 ## LICENSE
-This is a fork of a couple of scripts, one of them is unlicensed and the other has a license is as follows:
 
-    This software (lol, cmon now it's just a script) is provided as-is, so if it causes you any pain or chaos, don't sue me.  
-
-I don't know if I can add my own license, but if I can, then it is the MIT License
+I think I can add my own license to the modification/contribution. then it is the MIT License
 
     (The MIT License)
     
@@ -75,3 +75,7 @@ I don't know if I can add my own license, but if I can, then it is the MIT Licen
     CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
     TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+This is a fork of a couple of scripts. @holmam's script is unlicensed, while it's fork (@aashay's) has the following license. It can be found at https://github.com/aashay/Cloudapp#readme
+
+    This software (lol, cmon now it's just a script) is provided as-is, so if it causes you any pain or chaos, don't sue me.  
