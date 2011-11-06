@@ -78,6 +78,8 @@ I think I can add my own license to the modification/contribution. then it is th
     TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
     SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-This is a fork of a couple of scripts. @holmam's script is unlicensed, while it's fork (@aashay's) has the following license. It can be found at https://github.com/aashay/Cloudapp#readme
+This is a fork of a couple of scripts. From what I can tell, @holman's script (https://github.com/holman/dotfiles/blob/master/bin/cloudapp) is unlicensed.
+
+Its fork (by @aashay) has the following license. It can be found at https://github.com/aashay/Cloudapp#readme
 
     This software (lol, cmon now it's just a script) is provided as-is, so if it causes you any pain or chaos, don't sue me.  
