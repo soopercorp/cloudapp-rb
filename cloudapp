@@ -1,27 +1,29 @@
 #!/usr/bin/env ruby
 #
 # cloudapp
-# Hacked together with duct tape, hopes, and dreams by Aashay Desai / @aashay
+# Added a feature to email the file as link by Hardik Ruparel / @hardikr
+# Forked from Aashay Desai / @aashay
 # Original by Zach Holman / @holman
 #
-# Uploads a file from the command line to CloudApp, drops it into your clipboard
+# Uploads a file from the command line to CloudApp, drops it into your clipboard. You can also email a link to the file to any recipient.
 #
 # Example:
 #
 #   cloudapp drunk-blake.png
+#   cloudapp drubk-blake.png john@doe.com
 #
-# This requires Aaron Russell's cloudapp_api gem:
-#
-#   gem install cloudapp_api
-#
-# Requires you set your CloudApp credentials in ~/.cloudapp as a simple file of:
+# 
+# Requires you set your CloudApp (and possibly GMail) credentials in ~/.cloudapp and ~/.gmail as a simple config file:
 #
 #   email
 #   password
+# For full instructions, and license information check out the readme at https://github.com/hardikr/cloudapp-rb#readme
+#
 
 require 'rubygems'
 begin
   require 'cloudapp_api'
+  require 'gmail'
 rescue LoadError
   puts "You need to install cloudapp_api: gem install cloudapp_api"
   exit!(1)
@@ -99,8 +101,29 @@ url = CloudApp::Item.create(:upload, {:file => ARGV[0]}).url
 puts "Uploaded to #{url}..."
 
 # Get the embed link.
-url = "#{url}/#{ARGV[0].split('/').last}"
+urlnew = "#{url}/#{ARGV[0].split('/').last}"
 
 # Copy it to your clipboard.
 Copier::copy(url)
-puts "Copied #{url} to clipboard! ENJOY!"
+puts "URL copied to clipboard, Enjoy! "
+
+unless ARGV[1].nil?
+
+  gconfig_file = "#{ENV['HOME']}/.gmail"
+  unless File.exist?(config_file)
+    puts "You need to type your email and password (one per line) into " + "`~/.gmail`"
+    exit!(1)
+  end
+  
+  gusername,gpassword = File.read(gconfig_file).split("\n")
+
+  Gmail.new(gusername, gpassword) do |gmail|
+    gmail.deliver do
+      to ARGV[1]
+      subject "Here's the file you requested!"
+      html_part do
+        body "Click the link below to view/download the file: \n" + url
+      end
+    end
+  end
+end
