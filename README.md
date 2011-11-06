@@ -53,7 +53,7 @@ Huge thanks to:
 
 ## LICENSE
 
-I think I can add my own license to the modification/contribution. then it is the MIT License
+I'm new to this, and I think I can add my own license to the modification/contribution.
 
     (The MIT License)
     
