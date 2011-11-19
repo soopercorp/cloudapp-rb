@@ -18,7 +18,7 @@
 #   email
 #   password
 # 
-# For full instructions, and license information check out the readme at https://github.com/hardikr/cloudapp-rb#readme
+# For complete documentation and license information, visit http://code.hardikr.com/cloudapp-rb
 #
 
 require 'rubygems'
@@ -111,7 +111,7 @@ puts "URL copied to clipboard, Enjoy! "
 unless ARGV[1].nil?
 
   gconfig_file = "#{ENV['HOME']}/.gmail"
-  unless File.exist?(config_file)
+  unless File.exist?(gconfig_file)
     puts "You need to type your email and password (one per line) into " + "`~/.gmail`"
     exit!(1)
   end
