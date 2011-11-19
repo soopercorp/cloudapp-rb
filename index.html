@@ -17,7 +17,7 @@ My contribution to the script was to let you email the link to someone.</p>
 
 <h2>Installation</h2>
 
-<h3>1) Installing Requirements (for Ubuntu)</h3>
+<h4>1) Installing Requirements (for Ubuntu)</h4>
 
 <pre>sudo apt-get install xclip
 sudo apt-get install ruby1.9.1
@@ -31,14 +31,14 @@ sudo gem install mail
 sudo gem install ruby-gmail
 </pre>
 
-<h3>2) Grab the script, copy to /usr/bin and make it executable.</h3>
+<h4>2) Grab the script, copy to /usr/bin and make it executable.</h4>
 
 <pre>curl https://raw.github.com/hardikr/cloudapp-rb/master/cloudapp --O cloudapp
 sudo cp cloudapp /usr/bin
 sudo chmod a+x cloudapp
 </pre>
 
-<h3>3) Create config files ~/.cloudapp and ~/.gmail, both with following format</h3>
+<h4>3) Create config files ~/.cloudapp and ~/.gmail, both with following format</h4>
 
 <pre>username
 password
@@ -46,12 +46,12 @@ password
 
 <h2>Examples</h2>
 
-<h3>Upload a file (URL copied to clipboard)</h3>
+<h4>Upload a file (URL copied to clipboard)</h4>
 
 <pre>cloudapp file.txt
 </pre>
 
-<h3>Upload a file and email it to john@doe.com</h3>
+<h4>Upload a file and email it to john@doe.com</h4>
 
 <pre>cloudapp file.txt john@doe.com
 </pre>
@@ -60,13 +60,13 @@ password
 
 <p>Huge thanks to:</p>
 
-<p>@dcparker for the <a href="https://github.com/dcparker/ruby-gmail">ruby-gmail gem</a>.</p>
+<p><a href="https://github.com/dcparker">@dcparker</a> for the <a href="https://github.com/dcparker/ruby-gmail">ruby-gmail gem</a>.</p>
 
-<p>@aaronrussel for <a href="https://github.com/aaronrussell/cloudapp_api">the cloudapp_api gem</a>. </p>
+<p><a href="https://github.com/aaronrussel">@aaronrussel</a> for <a href="https://github.com/aaronrussell/cloudapp_api">the cloudapp_api gem</a>. </p>
 
-<p>@holman for his <a href="https://github.com/holman/dotfiles/blob/master/bin/cloudapp">original cloudapp dotfile</a>.</p>
+<p><a href="https://github.com/holman">@holman</a> for his <a href="https://github.com/holman/dotfiles/blob/master/bin/cloudapp">original cloudapp dotfile</a>.</p>
 
-<p>@aashay for his <a href="https://github.com/aashay/CloudApp">forked cloudapp script</a>.</p>
+<p><a href="https://github.com/aashay">@aashay</a> for his <a href="https://github.com/aashay/CloudApp">forked cloudapp script</a>.</p>
 
 
 <h2>LICENSE</h2>
@@ -75,7 +75,7 @@ password
 
 <pre>(The MIT License)
 
-Copyright (c) 2011 Hardik Ruparel , http://blog.hardikr.com
+Copyright (c) 2011 Hardik Ruparel
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
