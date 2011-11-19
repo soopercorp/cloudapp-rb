@@ -1,0 +1,95 @@
+<p>So this is my fork of @aashay's fork of @holman's Cloudapp Ruby Script.</p>
+
+<p>Basically, this let's you use cloudapp (http://getcloudapp.com) from the command-line in UNIX systems.
+My contribution to the script was to let you email the link to someone.</p>
+
+<p>You need ruby and gems installed to have this running.</p>
+
+<p>P.S.: This is my first attempt at modifying a Ruby script, and I am just a beginner. But, it does work :P</p>
+
+<h2>Installation</h2>
+
+<h3>1) Installing Requirements (for Ubuntu)</h3>
+
+<pre><code>sudo apt-get install ruby1.9.1
+curl http://production.cf.rubygems.org/rubygems/rubygems-1.8.10.tgz --O rubygems-1.8.10.tgz
+tar -xzvf rubygems-1.8.10.tgz
+cd rubygems-1.8.10
+sudo ruby setup.rb
+
+sudo gem install cloudapp_api
+sudo gem install mail
+sudo gem install ruby-gmail
+</code></pre>
+
+<h3>2) Grab the script, copy to /usr/bin and make it executable.</h3>
+
+<pre><code>curl https://raw.github.com/hardikr/cloudapp-rb/master/cloudapp --O cloudapp
+sudo cp cloudapp /usr/bin
+sudo chmod a+x cloudapp
+</code></pre>
+
+<h3>3) Create config files ~/.cloudapp and ~/.gmail, both with following format</h3>
+
+<pre><code>username
+password
+</code></pre>
+
+<h2>Examples</h2>
+
+<h3>Upload a file (URL copied to clipboard)</h3>
+
+<pre><code>cloudapp file.txt
+</code></pre>
+
+<h3>Upload a file and email it to john@doe.com</h3>
+
+<pre><code>cloudapp file.txt john@doe.com
+</code></pre>
+
+<h2>Credits</h2>
+
+<p>Huge thanks to:</p>
+
+<p>@dcparker for the ruby-gmail gem. (https://github.com/dcparker/ruby-gmail)</p>
+
+<p>@aaronrussel for the cloudapp_api gem. (https://github.com/aaronrussell/cloudapp_api) </p>
+
+<p>@holman for his original cloudapp dotfile (https://github.com/holman/dotfiles/blob/master/bin/cloudapp)</p>
+
+<p>@aashay for his forked cloudapp script (https://github.com/aashay/CloudApp)</p>
+
+<h2>LICENSE</h2>
+
+<p>I'm new to this, and I think I can add my own license to the modification/contribution.</p>
+
+<pre><code>(The MIT License)
+
+Copyright (c) 2011 Hardik Ruparel , http://blog.hardikr.com
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+</code></pre>
+
+<p>This is a fork of a couple of scripts. @holman's script (https://github.com/holman/dotfiles/blob/master/bin/cloudapp) is MIT Licensed.</p>
+
+<p>Its fork (by @aashay) has the following license. It can be found at https://github.com/aashay/Cloudapp#readme</p>
+
+<pre><code>This software (lol, cmon now it's just a script) is provided as-is, so if it causes you any pain or chaos, don't sue me.
+</code></pre>
