@@ -16,7 +16,7 @@ My contribution to the script was to let you email the link to someone.</p>
 
 <h3>1) Installing Requirements (for Ubuntu)</h3>
 
-<code>sudo apt-get install ruby1.9.1
+<pre><code>sudo apt-get install ruby1.9.1
 curl http://production.cf.rubygems.org/rubygems/rubygems-1.8.10.tgz --O rubygems-1.8.10.tgz
 tar -xzvf rubygems-1.8.10.tgz
 cd rubygems-1.8.10
@@ -25,32 +25,32 @@ sudo ruby setup.rb
 sudo gem install cloudapp_api
 sudo gem install mail
 sudo gem install ruby-gmail
-</code>
+</code></pre>
 
 <h3>2) Grab the script, copy to /usr/bin and make it executable.</h3>
 
-<code>curl https://raw.github.com/hardikr/cloudapp-rb/master/cloudapp --O cloudapp
+<pre><code>curl https://raw.github.com/hardikr/cloudapp-rb/master/cloudapp --O cloudapp
 sudo cp cloudapp /usr/bin
 sudo chmod a+x cloudapp
-</code>
+</code></pre>
 
 <h3>3) Create config files ~/.cloudapp and ~/.gmail, both with following format</h3>
 
-<code>username
+<pre><code>username
 password
-</code>
+</code></pre>
 
 <h2>Examples</h2>
 
 <h3>Upload a file (URL copied to clipboard)</h3>
 
-<code>cloudapp file.txt
-</code>
+<pre><code>cloudapp file.txt
+</code></pre>
 
 <h3>Upload a file and email it to john@doe.com</h3>
 
-<code>cloudapp file.txt john@doe.com
-</code>
+<pre><code>cloudapp file.txt john@doe.com
+</code></pre>
 
 <h2>Credits</h2>
 
@@ -68,7 +68,7 @@ password
 
 <p>I'm new to this, and I think I can add my own license to the modification/contribution.</p>
 
-<code>(The MIT License)
+<pre><code>(The MIT License)
 
 Copyright (c) 2011 Hardik Ruparel , http://blog.hardikr.com
 
@@ -90,14 +90,14 @@ IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
 CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
 TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-</code>
+</code></pre>
 
 <p>This is a fork of a couple of scripts. @holman's script (https://github.com/holman/dotfiles/blob/master/bin/cloudapp) is MIT Licensed.</p>
 
 <p>Its fork (by @aashay) has the following license. It can be found at https://github.com/aashay/Cloudapp#readme</p>
 
-<code>This software (lol, cmon now it's just a script) is provided as-is, so if it causes you any pain or chaos, don't sue me.
-</code>
+<pre><code>This software (lol, cmon now it's just a script) is provided as-is, so if it causes you any pain or chaos, don't sue me.
+</code></pre>
 </div>
 </body>
 </html>

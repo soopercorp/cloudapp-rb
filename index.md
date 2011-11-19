@@ -1,3 +1,4 @@
+<link href="css/style.css" rel="stylesheet"></link>
 So this is my fork of @aashay's fork of @holman's Cloudapp Ruby Script.
 
 Basically, this let's you use cloudapp (http://getcloudapp.com) from the command-line in UNIX systems.
