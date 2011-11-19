@@ -7,9 +7,9 @@ You need ruby and gems installed to have this running.
 
 P.S.: This is my first attempt at modifying a Ruby script, and I am just a beginner. But, it does work :P
 
-##Installation
+## Installation
 
-### 1) Installing Requirements (for Ubuntu)
+#### 1) Installing Requirements (for Ubuntu)
 
     sudo apt-get install xclip
     sudo apt-get install ruby1.9.1
@@ -22,35 +22,35 @@ P.S.: This is my first attempt at modifying a Ruby script, and I am just a begin
     sudo gem install mail
     sudo gem install ruby-gmail
     
-### 2) Grab the script, copy to /usr/bin and make it executable.
+#### 2) Grab the script, copy to /usr/bin and make it executable.
 
     curl https://raw.github.com/hardikr/cloudapp-rb/master/cloudapp --O cloudapp
     sudo cp cloudapp /usr/bin
     sudo chmod a+x cloudapp
 
-### 3) Create config files ~/.cloudapp and ~/.gmail, both with following format
+#### 3) Create config files ~/.cloudapp and ~/.gmail, both with following format
     username
     password
 
 ## Examples
 
-### Upload a file (URL copied to clipboard)
+#### Upload a file (URL copied to clipboard)
     cloudapp file.txt
     
-### Upload a file and email it to john@doe.com
+#### Upload a file and email it to john@doe.com
     cloudapp file.txt john@doe.com
 
 ## Credits
 
 Huge thanks to:
 
-@dcparker for the ruby-gmail gem. (https://github.com/dcparker/ruby-gmail)
+[@dcparker](https://github.com/dcparker) for the [ruby-gmail gem](https://github.com/dcparker/ruby-gmail).
 
-@aaronrussel for the cloudapp\_api gem. (https://github.com/aaronrussell/cloudapp\_api) 
+[@aaronrussel](https://github.com/aaronrussel) for the [cloudapp\_api gem](https://github.com/aaronrussell/cloudapp\_api).
 
-@holman for his original cloudapp dotfile (https://github.com/holman/dotfiles/blob/master/bin/cloudapp)
+[@holman](https://github.com/holman) for his [original cloudapp dotfile](https://github.com/holman/dotfiles/blob/master/bin/cloudapp).
 
-@aashay for his forked cloudapp script (https://github.com/aashay/CloudApp)
+[@aashay](https://github.com/aashay) for his [forked cloudapp script](https://github.com/aashay/CloudApp).
 
 
 ## LICENSE
@@ -59,7 +59,7 @@ I'm new to this, and I think I can add my own license to the modification/contri
 
     (The MIT License)
     
-    Copyright (c) 2011 Hardik Ruparel , http://blog.hardikr.com
+    Copyright (c) 2011 Hardik Ruparel
     
     Permission is hereby granted, free of charge, to any person obtaining
     a copy of this software and associated documentation files (the
