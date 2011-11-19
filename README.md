@@ -11,6 +11,7 @@ P.S.: This is my first attempt at modifying a Ruby script, and I am just a begin
 
 ### 1) Installing Requirements (for Ubuntu)
 
+    sudo apt-get install xclip
     sudo apt-get install ruby1.9.1
     curl http://production.cf.rubygems.org/rubygems/rubygems-1.8.10.tgz --O rubygems-1.8.10.tgz
     tar -xzvf rubygems-1.8.10.tgz
