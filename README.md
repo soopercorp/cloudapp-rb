@@ -1,3 +1,8 @@
+# No longer maintained.
+## Please check [Mishare](http://code.hardikr.com/mishare)
+
+# Old Stuff - Probably doesn't work..
+
 So this is my fork of @aashay's fork of @holman's Cloudapp Ruby Script.
 
 Basically, this let's you use cloudapp (http://getcloudapp.com) from the command-line in UNIX systems.
